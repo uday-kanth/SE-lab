@@ -22,3 +22,22 @@ docker push <image name>
 docker build –t myimage:1.0 .
 
 *******************************************************************
+// kubernetes OR MINIkube
+
+minikube start    
+
+minikube ip
+
+kubectl get po –A 
+
+kubectl create deployment hello-minikube --image=k8s.gcr.io/echoserver:1.4
+
+kubectl expose deployment hello-minikube --type=NodePort --port=8080
+
+kubectl port-forward service/hello-minikube 7080:8080
+
+
+in browser open http://localhost:7080/
+
+kubectl apply –f  mongo-config.yaml  //{configurations mandatory}
+
