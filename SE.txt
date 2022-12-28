@@ -1,0 +1,24 @@
+// Docker CLI commands
+docker --version  
+
+docker pull [image name] 
+
+docker image ls
+
+docker run <image name>
+
+docker ps
+
+docker stop <cont id>
+
+docker kill <cont. id>
+
+docker push <image name>
+
+****************************************************************
+
+// Docker file image
+
+docker build –t myimage:1.0 .
+
+*******************************************************************
